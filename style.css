@@ -1,0 +1,507 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  min-height: 40vh;
+}
+
+.section__pic-container {
+  display: flex;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+  text-align: center;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: .7rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+  min-height: 50vh;
+  margin-top: 4rem;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers{
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.about-details-container .details-container {
+  padding: 1rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+.experience-details-containe {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  max-width: 600px;
+}
+.experience-details-container {
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  max-width: 900px;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 4.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+  font-size: 1rem;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* CONTACT */
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.form-container {
+  width: 45%;
+}
+
+.form-container form {
+  border-radius: 10px; /* Add border radius */
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.input-group:last-child {
+  margin-bottom: 0; /* Remove margin bottom for the last input group */
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.input-group input[type=text],
+.input-group input[type=email],
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  resize: vertical;
+}
+
+.input-group textarea {
+  height: 160px; /* Set height for textarea */
+}
+
+.input-group input[type=submit] {
+  background-color: #999;
+  color: var(--text-color);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Center the button */
+}
+
+.input-group input[type=submit]:hover {
+  background-color: #999;
+}
+
+
+.footer {
+  background-color: #ccc;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.footer-column {
+  width: 23%;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.social-media-links a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  background-color: #918e8e;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+.fohead{
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+@media screen and (max-width: 1400px) {
+  p{
+    text-align: justify;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  p{
+    font-size: 1.3rem;
+    text-align: justify;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+@media screen and(max-width: 800px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer-column {
+    margin-bottom: 2rem; /* Add margin between footer columns */
+  }
+}
+@media screen and (max-width: 600px) {
+ p{
+  font-size: 1rem;
+ }
+  #profile {
+    min-height: 50vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  .about-containers,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+ 
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }  
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 90%;
+    margin-right: 4rem;
+    margin-bottom: 2rem; /* Add margin at the bottom for better spacing */
+  }
+}
+
+ 
+
+@media only screen and (max-width: 480px) {
+  .input-group label {
+    font-size: 0.9rem; /* Reduce font size for labels */
+  }
+
+  body{
+    background: #000;
+  }
+  .input-group input[type=text],
+  .input-group input[type=email],
+  .input-group textarea {
+    padding: 10px; /* Reduce padding for inputs and textareas */
+  }
+
+  .input-group input[type=submit] {
+    padding: 10px 15px; /* Reduce padding for submit button */
+  }
+  .footer-column h4 {
+    margin-bottom: 1rem; /* Reduce margin for footer column headings */
+  }
+
+  .footer-column ul {
+    padding-left: 0; /* Remove left padding for footer column lists */
+  }
+
+  .footer-column ul li {
+    list-style-type: none; /* Remove list bullet points */
+    margin-bottom: 0.5rem; /* Add margin between footer list items */
+  }
+}
