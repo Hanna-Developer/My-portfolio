@@ -478,9 +478,6 @@ article .icon {
     font-size: 0.9rem; /* Reduce font size for labels */
   }
 
-  body{
-    background: #000;
-  }
   .input-group input[type=text],
   .input-group input[type=email],
   .input-group textarea {
